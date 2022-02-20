@@ -1,0 +1,48 @@
+{
+  "name": "@harvey0379/mumu",
+  "version": "0.1.1",
+  "description": "a dictionary",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc && npm run build:browserify",
+    "build:esm": "tsc --module esnext",
+    "build:cjs": "tsc --module commonjs",
+    "build:browserify": "browserify dist/index.js > dist/mumu.js",
+    "browser": "tsc && browserify dist/index.js > examples/mumu.js",
+    "prepare": "husky install"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "keywords": [
+    "namer"
+  ],
+  "author": "Harvey",
+  "license": "MIT",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.4",
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts,jsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "*.{html,less,css,json,md}": [
+      "prettier --write"
+    ]
+  },
+  "dependencies": {
+    "browserify": "^17.0.0"
+  }
+}
