@@ -15,10 +15,16 @@
     "dist/**/*"
   ],
   "keywords": [
-    "namer"
+    "collection",
+    "dictionary"
   ],
   "author": "Harvey",
   "license": "MIT",
+  "repository": "github:Huauauaa/mumu",
+  "homepage": "https://github.com/Huauauaa/mumu/#README",
+  "bugs": {
+    "url": "https://github.com/Huauauaa/mumu/issues"
+  },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.12.0",
     "@typescript-eslint/parser": "^5.12.0",
