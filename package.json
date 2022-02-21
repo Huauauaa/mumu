@@ -1,6 +1,6 @@
 {
   "name": "@harvey0379/mumu",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "a dictionary",
   "main": "dist/index.js",
   "scripts": {
