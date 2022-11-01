@@ -8,7 +8,6 @@
     "build:esm": "tsc --module esnext",
     "build:cjs": "tsc --module commonjs",
     "build:browserify": "browserify dist/index.js > dist/mumu.js",
-    "browser": "tsc && browserify dist/index.js > examples/mumu.js",
     "prepare": "husky install"
   },
   "files": [
@@ -28,6 +27,7 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.12.0",
     "@typescript-eslint/parser": "^5.12.0",
+    "browserify": "^17.0.0",
     "eslint": "^8.9.0",
     "husky": "^7.0.4",
     "lint-staged": "^12.3.4",
@@ -48,7 +48,5 @@
       "prettier --write"
     ]
   },
-  "dependencies": {
-    "browserify": "^17.0.0"
-  }
+  "dependencies": {}
 }
